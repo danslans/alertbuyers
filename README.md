@@ -5,7 +5,7 @@
 El proyecto AlertBuyers es una API encargada de notificar a los compradores sobre el retraso en la entrega de sus pedidos por el estado del clima. A continuación se detallan los escenarios principales y alternativos del funcionamiento del sistema.
 
 ## NOTA:
-Tener en cuenta que esta api tiene conexiones reales a plataformas de envio de correos y a la API del clima api.weatherapi.com en caso de querer probar algun escenario, como ver las notificaciones, de ante mano el API de clima debio haber
+Tener en cuenta que esta api tiene conexiones reales a plataformas de envio de correos Mailtrap y a la API del clima api.weatherapi.com en caso de querer probar algun escenario, como ver las notificaciones, de ante mano el API de clima debio haber
 notificado el estado del clima con los codigo que estan en la prueba (1186, 1189, 1192, 1195).
 
 Es posible cambiar o agregar mas codigos para la prueba. en el archivo: 
@@ -40,7 +40,15 @@ alertbuyers\src\main\resources\data.sql
 
 ----------------------------------------------------------------
 ## Endpoints
+Puedes ejecutar los endpoint con el archivo. 
+```
+/alertbuyers/postman_collection.json
+```
+
+
 ### `POST /alertBuyer`
+`https://alertbuyers-e6f2014622ac.herokuapp.com/alertBuyer`
+`http://localhost:8080/alertBuyer`
 
 **Descripción:** Envía una alerta de retraso al comprador.
 
@@ -93,6 +101,8 @@ alertbuyers\src\main\resources\data.sql
 500 Internal Server Error: Error interno en el servidor.
 
 ### `GET /notifications`
+`https://alertbuyers-e6f2014622ac.herokuapp.com/notifications`
+`http://localhost:8080/notifications`
 
 **Descripción:**  Obtiene las notificaciones enviadas a un comprador basado en su email.
 

@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "2f58bb3c-8093-49e4-ba37-aa8c8b2013d1",
+		"name": "Meli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11475774",
+		"_collection_link": "https://warped-space-536714.postman.co/workspace/My-Workspace~3271f7c1-bafa-474c-8a88-b1f49fba10f0/collection/11475774-2f58bb3c-8093-49e4-ba37-aa8c8b2013d1?action=share&source=collection_link&creator=11475774"
+	},
+	"item": [
+		{
+			"name": "Produccion",
+			"item": [
+				{
+					"name": "alertBuyer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"danslans77@gmail.com\",\r\n    \"location\": {\r\n        \"latitude\": \"6.1543519\",\r\n        \"longitude\": \"-75.6076758\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alertbuyers-e6f2014622ac.herokuapp.com/alertBuyer",
+							"protocol": "https",
+							"host": [
+								"alertbuyers-e6f2014622ac",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"alertBuyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notifications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alertbuyers-e6f2014622ac.herokuapp.com/notifications?email=danslans77@gmail.com",
+							"protocol": "https",
+							"host": [
+								"alertbuyers-e6f2014622ac",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"notifications"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "danslans77@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "alertBuyer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"danslans77@gmail.com\",\r\n    \"location\": {\r\n        \"latitude\": \"6.1543519\",\r\n        \"longitude\": \"-75.6076758\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/alertBuyer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alertBuyer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/notifications?email=danslans77@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "danslans77@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
