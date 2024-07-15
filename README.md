@@ -15,7 +15,8 @@ alertbuyers\src\main\resources\data.sql
 
 ## DEMO
 Aqui puedes encontrar una pagina donde puedes ver el comportamiento de la API 
-Ten en cuenta que el Email por defecto es danslans77@gmail.com para poder enviar correos 
+Ten en cuenta que el Email por defecto es danslans77@gmail.com para poder enviar correos.
+**nota:** para la demo se agrego el codigo del clima (1063) https://github.com/danslans/alertbuyers/blob/main/src/main/resources/data.sql
 ```
 https://danslans.github.io/webalertbuyers/
 ```
